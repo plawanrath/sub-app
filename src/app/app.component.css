@@ -1,0 +1,20 @@
+nav {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(83, 126, 83);
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(236, 231, 231);
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-grow: 1;
+}
+
+nav a:hover {
+    color: rgb(29, 28, 28);
+}

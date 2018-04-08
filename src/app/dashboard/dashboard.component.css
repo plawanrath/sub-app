@@ -1,0 +1,7 @@
+.homeImg {
+    width: 1200px;
+    height: 670px;
+    background-image: url("../../assets/background.png"); 
+    display: table;
+    margin: 0 auto;    
+}
