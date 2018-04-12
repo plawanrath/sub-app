@@ -5,3 +5,11 @@
     display: table;
     margin: 0 auto;    
 }
+
+.sample {
+    width: 1200px;
+    height: 670px;
+    background-color: black; 
+    display: table;
+    margin: 0 auto;    
+}

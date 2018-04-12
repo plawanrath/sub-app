@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -12,7 +12,8 @@ import { Volume3Component } from './volume3/volume3.component';
 import { Volume4Component } from './volume4/volume4.component';
 import { Volume5Component } from './volume5/volume5.component';
 import { AuthorComponent } from './author/author.component';
-
+import { ScrollToModule } from 'ng2-scroll-to-el';
+import { ScrollFadeInDirective } from './scroll-fade-in.directive';
 
 @NgModule({
   declarations: [
@@ -24,11 +25,14 @@ import { AuthorComponent } from './author/author.component';
     Volume3Component,
     Volume4Component,
     Volume5Component,
-    AuthorComponent
+    AuthorComponent,
+    ScrollFadeInDirective
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ScrollToModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
