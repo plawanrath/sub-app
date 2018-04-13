@@ -2,9 +2,9 @@ import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css'],
+  selector: 'app-dashsub2',
+  templateUrl: './dashsub2.component.html',
+  styleUrls: ['./dashsub2.component.css'],
   animations: [
     trigger('scrollAnimation', [
       state('show', style({
@@ -20,7 +20,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     ])
   ]
 })
-export class DashboardComponent implements OnInit {
+export class Dashsub2Component implements OnInit {
 
   state = 'hide'
 
@@ -31,12 +31,14 @@ export class DashboardComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
-    const elementOffsetTop = document.getElementById("content").offsetTop;
-    const firstImgOffset = document.getElementById("imgDiv").offsetHeight;
-    if(window.pageYOffset > firstImgOffset-400) {
+    const elementOffsetTop = document.getElementById("content2").offsetTop;
+    const firstImgOffset = document.getElementById("content").offsetHeight;
+    console.log(window.pageYOffset)
+    console.log(firstImgOffset)
+    if(window.pageYOffset > firstImgOffset + 100) {
       this.state = 'show';
     } else {
       this.state = 'hide';
-    }
-  }  
+    }    
+  }
 }

@@ -14,6 +14,7 @@ import { Volume5Component } from './volume5/volume5.component';
 import { AuthorComponent } from './author/author.component';
 import { ScrollToModule } from 'ng2-scroll-to-el';
 import { ScrollFadeInDirective } from './scroll-fade-in.directive';
+import { Dashsub2Component } from './dashsub2/dashsub2.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ScrollFadeInDirective } from './scroll-fade-in.directive';
     Volume4Component,
     Volume5Component,
     AuthorComponent,
-    ScrollFadeInDirective
+    ScrollFadeInDirective,
+    Dashsub2Component
   ],
   imports: [
     BrowserModule,
