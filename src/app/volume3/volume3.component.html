@@ -1,5 +1,49 @@
 <div class="wrapper">
-  <p>
-    volume3 works!
-  </p>
-</div>
+    <div class="document">
+      <h1 *ngIf="articleNo == 1">Shri Guru Bhagavat Vol III</h1>
+      <h1 *ngIf="articleNo == 2">Maya and Karma</h1>
+      <h1 *ngIf="articleNo == 3">Guru and Meditation</h1>
+      <div class="left">
+        <a class="previous round" (click)="previousArticle()">&#8249;</a>      
+      </div>
+      <div class="right">
+        <a class="next round" (click)="nextArticle()">&#8250;</a>
+      </div>
+      <div class="document__content">
+          <article *ngIf="articleNo == 1">
+            <p>
+              Volume Three deals with Dharma (path of righteousness), knowledge of Death (Mirtyu Vidya), Karma Phal (Action Reaction syndrome of Hindu spiritual science), Spiritual practices relating to the Guru ( Guru Sadhana). Mirtyu Vidya– “The Science of Death” has been a hallmark of this volume which has drawn an inquisitive mind to seek answer for how  and what happens at the time of “death of a soul”. The main aspects of Mrityu-Vidya deals with- the role of Sadguru at the time of death of devotee. Remarkable features of this volume is the mention of journey of soul after death into Heaven (Swarga-Loka) and Hell (Narka- Loka). The theory of Karma- Phala (action reaction syndrome of Hindu spiritual science) is also another prominent feature of this volume wherein the author has mentioned various aspects of seed of Karma. The author has also revealed on how Karmic debt results and how the shackles of debts (Rinanubandha) manifested as per Karma is pretty much eye opening for the readers to realize in this volume. Another notable feature of this volume is – Guru Sadhana (Meditation on Guru) deals with different types of meditation, mental worship, worship of Guru and seven levels of Sadhana (Meditation).
+            </p> 
+          </article>            
+          <article *ngIf="articleNo === 2">
+              <p>
+                “All human activities are born out of human desire. The fulfillment or non-fulfillment of one’s desire, at times generates another desire. Similarly, one activity leads to other activities in life” - Shri Guru Bhagavat Volume III.  
+              </p>
+              <p>
+                The premise of the above sentences is basically this; we human beings have worldly desires and these worldly desires prompt us to action. Our actions are decided based on what we want to achieve. Now, whether we achieve our goal or not, that in turn generates another desire another goal, and then we act to try and fulfill that. This goes on in an endless cycle. Now another factor to consider about actions, is that every action that we perform has some consequence good or bad.
+              </p>
+              <p>
+                This whole theory shows the complexity of Karma. Let’s consider this for a moment that there is a single desire which leads to some actions for the fulfillment of that desire, and each of these actions will have some lateral consequences which may have their own impact and then again whether our actions led to success or failure in our desire, that again leads to another desire which leads to its own set of actions, and so on. This cobweb of desires and actions is Maya. Moreover, it is entirely possible that when performing a noble act, one might inadvertently commit a sin. The tricky part about its complexity is that, when we do an action, there is no way for us to know whether that action will entangle us in the web of Maya and this is where the Guru solves the conundrum of the devotee.                
+              </p>
+              <p>
+                Now karma creates karmic debts. So when we perform a karma a debt is created which must be paid. So karma creates a debt and in the process of payment of that old debt a new karmic debt is created and the cycle goes on and a person does not get salvation until all debts are paid. Now simple math shows that if at some point Karmas that we perform do not generate any karmic debts and break the cycle only then, we can pay out our karmic debts and get salvation. The solution to this conundrum is provided in Shir Guru Bhagavat Volume 3, and I quote from verses 20 and 21 “However, if he does not yearn for the benefits of his karma, then fresh Rina (karmic debt) does not get created. Further, if a devotee offers the results of his karma to the Sadguru, even then karmic debts do not get created.”                
+              </p>   
+              <p>
+                So, by not yearning the benefits of ones Karma and by offering the results of ones karma to the Sadguru one can make sure that karmic debts do not get created and keeping this up while paying previous karmic debts, one can finally gain salvation.                
+              </p>
+          </article>  
+          <article *ngIf="articleNo === 3">
+            <p>
+              The Shri Guru Bhagavat Volume III talks extensively about meditation on the Guru. The Guru Bhagavat explains the two forms of meditation which are the meditation of the form and the meditation of the formless. The meditation of the form is the easier of the two where the devotee needs to the concentrate on the physical form of the Guru and meditate while the formless meditation is much tougher to achieve. But the devotees who achieve the formless meditation of the Guru they come to realize the magnanimity of the powers of their Guru. It is written in the Bhagvad Gita too and I quote, “When meditation is mastered, the mind is unwavering like the flames of a candle in a windless place.”              
+            </p>
+            <p>
+              When the devotee intently focuses on the complete form of the Guru, he begins to understand the divine qualities of the Guru and as he maintains the concentration and meditation of the form of the Guru, he slowly transcends into the realm of the formless state of meditation. The different planes of spiritual journey achieved through meditation are explained in great detail in the volume III of the Shri Guru Bhagavat. It further goes on to explain that when devotees come to a Guru for their spiritual journey, the Guru creates obstacles for his devotees to increase patience and resilience in them. The Guru knows the personality of his devotees, so naturally the Guru knows the worldly desires that the devotee has. The Guru also knows the amount of hate, anger, ego and other negative qualities that the devotee might have. So these obstacles created by the Guru, are nothing but a means to rid the devotee of all the negativity filled inside of him for unless the negativity is shed there wouldn’t be room for positive energy of meditation to come in.  Once the Guru sees that the devotee is free of the negativity, he then takes the devotee through happiness and sorrow in the path of spiritual evolution.              
+            </p>
+            <p>
+              Through the path of this spiritual journey, the Guru helps clarify any doubts that the devotee might have either directly or indirectly. Meditation on Guru demands complete faith in the Guru. A true devotee has to always strive to comply by any and all instructions of his Guru and in return the Guru bestows his companion on the devotee. The Guru not only eradicates the negative qualities, but also helps elevate the noble qualities of his devotee. When the devotee’s negativity is taken away and his noble qualities are elevated the devotee through the Guru’s direct or indirect assistance starts performing noble deeds. Through this whole journey, the devotee realizes that the Guru is actually the divine.​As it is put in the Volume III of Shri Guru Bhagavat, and I quote, “When in the state of spiritual ecstasy, a devotee feels as if the Guru is nothing but God himself and is the divine animator of the universe. Such an emotional upsurge creates spiritual pulsation in his heart. The devotee feels as if the Guru is nothing but a universal divine consciousness. Although he is in a physical form, he truly pervades the universe in a celestial form.”
+            </p>
+          </article>
+        </div>
+    </div>
+  </div>
+  

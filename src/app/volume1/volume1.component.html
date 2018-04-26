@@ -1,8 +1,91 @@
 <div class="wrapper">
   <div class="document">
-    <h1>Shri Guru’s Devotee(Shri Guru Bhagwat Vol-I,Page -70)</h1>
+    <h1 *ngIf="articleNo == 1">Shri Guru Bhagavat Vol I</h1>
+    <h1 *ngIf="articleNo == 2">Shri Guru Bhagavat – An epitome of Bhakti Marg (Path of Devotion)</h1>
+    <h1 *ngIf="articleNo == 3">Shri Guru’s Devotee(Shri Guru Bhagwat Vol-I,Page -70)</h1>
+    <div class="left">
+      <a class="previous round" (click)="previousArticle()">&#8249;</a>      
+    </div>
+    <div class="right">
+      <a class="next round" (click)="nextArticle()">&#8250;</a>
+    </div>
     <div class="document__content">
-        <article>
+        <article *ngIf="articleNo == 1">
+          <p>
+              The volume One describes about – Shri Sadguru (The Perfect Masters), Gurus (Masters), Santhas(Saints) and Sanyaasi (Ascetics). Subsequent chapters deal with - Guru-Sisya (Disciple) relationship including the system of Deeksha.  To put it in simple language, this volume will familiarize the readers with the three basic pillars of Guru Tattawa (fundamental elements relating to the Gurus), namely Guru, Shishya (Disciple) and their spiritual relationship seen from different perspectives.            
+          </p> 
+          <p>
+            This volume also deals with- Types of Guru, Divine activities of Five Sadgurus, The role of Sadgurus in the evolution of Jeevatma. What are the classifications of Sanyasis (Mendicants). The difference between a Sudha Yogi (Pure Yogi) and an Evil Yogi is described pretty briefly in this volume as well. Classification and characteristics of Devotees are also described in detail. Guruji has very keenly described how different classifications of devotees happen in terms of desire, Karma and Bhakti . Another notable feature of this volume is that it has explicitly described between- Who is called a Good Devotee (Su- Bhakta)  and who is called a “ Foolish Devotee”. Mention about “ Ankit Santan” (Spiritual Children) is also pretty unique towards the end of this volume which Guruji has described in detail.
+          </p>         
+        </article>       
+        <article *ngIf="articleNo === 2">
+          <p>
+            Dr. C. B. Satpathy’s poetic treatise, Shri Guru Bhagavat is one of the unparalleled creation on devotion for the spiritual seekers. With its origin in Odia language, now it has been translated into multiple Indian languages. The English translation is now studied across Europe, United States, Australia and beyond. It sometimes amazes us as to what is it that’s driving this spiritual awakening across the globe! Shri Guru Bhagavat has led to the rebirth of the ancient tradition of Bhagavat Tungi which was once the backbone of spiritual practices of Odisha in India. Of many, it has led to discuss the most abstained aspect of life – ‘The death’. The fear and superstitions associated with death is now slowly shed among its readers. Many unexplored aspects of universe, life, death, time, soul, traditions and role of Gurus now stand revealed, thanks to Shri Guru Bhagavat. It is influencing lives of thousands in incomprehensible ways. The way people think and act is now greatly influenced by the tenets of Guru Bhagavat.  The prophetic words of devotion dawned upon Guruji one night in the latter half of 2001, and slowly and spontaneously took the shape of Shri Guru Bhagavat now published in five volumes containing twenty thousand lines.            
+          </p>
+          <p>
+            Shri Guru Bhagavat is an exhaustive ocean of knowledge ranging in subjects from the tangible world to the upper echelons of spiritual world. It is very natural for the reader to miss the boat of devotion who set sail to explore that ocean for the first few times. The sheer exposure of the vastness of the unknown world beyond the limitation of human intelligence somehow mesmerizes the reader, who in turn feels empowered with the knowledge gained from this treatise. It becomes a grandiose medium of knowledge rather than the subtle medium of devotion, which the epic intends to ignite in the readers. Again, as one would experience, the underlying reason for this effect is clearly the ignorance of the reader.            
+          </p>
+          <p>
+            Once the reader is contended with the learnings from SGB, which again might be a fraction of the magnanimous work, and that too with a limited ability to interpret it correctly, a whole hearted retrospection might be able to ignite that spark of devotion. I started to read the Guru Bhagavat once again after six years since I first read it, secretly wishing to find that latent spark of devotion somewhere.            
+          </p>
+          <p>
+            I started to read the Volume 1 in the Odia language. The book starts with Shri Guru Prarthana (Prayer for Shri Guru). It has 34 stanzas or 68 couplets comprising 136 lines. As stated earlier, Shri Guru Bhagavat encompasses every aspect of our existence starting from birth, even before birth, to death and after death. In a way, Shri Guru Bhagavat is the summary of life and creation, and this very first prayer is the summary of the Guru Bhagavat. It starts with the most enlightening lines:            
+          </p>
+          <blockquote>
+            Shri Gurudeba, Gurudeba<br/>
+            Praana mo khoje paada taba<br/>
+            Tuma Shri payara dhyaanare<br/>
+            Ekaagrataa aase manare
+          </blockquote>
+          <p>
+            <i>
+                Oh Shri Gurudev (Oh the Reverend Master)! My soul ever yearns for Your feet. Only when I meditate on Your holy feet, my mind gets absorbed in it.
+            </i>
+          </p>
+          <p>
+            This stanza is epic in many ways. First of all these were the first lines that had dawned upon Guruji and and took the shape of Shri Guru Bhagavat as we know today. I strongly feel that these four lines must be the most important lines in the entire epic. This verse  opens many windows to the spiritual world by highlighting various aspects such as ‘Guru’ or the Spiritual Master : Who is He? Why does the author invoke Him? What role does Guru play in our lives? What is Prana or life force within us? What is the relevance of the Guru’s feet? What is meditation ? What do we meditate upon? How does the mind get absorbed in the Divine? This in turn motivates the readers to read further and explore the answers. Each of these topics and much more is explained in the following twenty thousand lines of Shri Guru Bhagavat.              
+          </p>
+          <p>
+            The author has highlighted only two stanzas out of thirty four in the opening prayer of this series. These highlighted texts can only be found in the original composition in Odia language. Of the two highlighted stanzas, one is stanza 22:            
+          </p>
+          <blockquote>
+            Tenu jaa’ ghate tuma paashe<br/>
+            Se sabu mangala sakaashe |<br/>
+            Abhakta bujhi paare naahin<br/>
+            Subhakta prashna kare naahin ||
+          </blockquote>
+          <p>
+            <i>“Hence whatever happens around You, is always for the good. A non-believer does not understand and believer does not question it.”</i>
+          </p>
+          <p>
+            Here two important aspects are brought forth by the author. One: The events or phenomena  around an individual are carried out by nature under the directions of the God or Guru. And whatever happens is for the ultimate good of the devotee. Two: A non-believer does not understand any of this, and the true believer never questions these events.            
+          </p>
+          <p>
+            Elaborating a little further on the first topic, our existence is governed by events around us. Actions affect us and at the same time we become actors for various activities. This keeps the creation eventful, and in motion. Events may result in happiness and at times cause miseries for us. Sometimes things are in our favor and sometimes not so. We gain at times and lose at the other. From birth to death, health to sickness, rags to riches, these are all activities that goes on and on and affect us as individuals. Man hardly has the capability to control much of it. More often than not, we are mere spectators of this phenomena. Man somehow acknowledges these to be acts of nature when unable to comprehend logically. The Gurus and learned men of the spiritual world have time and again stated that there are greater forces who have the capability to govern the way ‘Nature’ acts. They are in a way higher than nature. We can conclude that events are governed by nature who in turn is governed by God or Guru. Thus it is appropriately said ‘Whatever happens around You(God/Guru), is always good(for all). This is easier said than believed because most of the time man prays to the Supreme for something good, to rescue him from hardship, to cure the incurable, for success in the unfavorable situation, and for happiness. Seeking failure, pain, struggle and praying for poverty is unheard of. As stated in Guru Bhagavat, the giver of so called happiness is the same Guru who gives sorrows as well. By imparting experiential knowledge, the Guru evolves the devotees by redeeming them from the worldly miseries.
+          </p>
+          <p>
+            On the second aspect, as we all know today, the entirety of the world can be divided into two categories based on the ability to comprehend a Guru or the almighty God. Irrespective of the culture, faith and belief system, broadly two categories of people exist. One being a ‘abhakta’ or a non-believer. Such a person does not believe in the existence of any entity higher than himself or herself. A non-believer does not get influenced by any teachings or knowledge that comes to him from various sources. His ego and stronger self restricts him from receiving the grace of divine knowledge in many ways. He feels empowered by basking in the glory of his worldly knowledge and keeps rejecting any Guru or authority above him. So for this category of people, it is appropriately said he is never able to comprehend the events around him. He keeps on using his intelligence to decipher the problems and devise temporal solutions for the same, over and over again. He remains skeptical at every step of life as he believes that he is the doer himself. The second category is the ‘subhakta’ or the believer. He earnestly follows the teachings of the scriptures and the Guru, thus is able to decipher the divine knowledge to the best of his ability. And having known the role of Guru and nature, he accepts all phenomena, good and bad, happiness and sorrow, loss and gain as the blessings of the Guru. He evolves higher with every event in his life.
+          </p>
+          <p>
+            The next highlighted stanza by the author is the stanza 34 at the end the prayer. Guruji concludes the opening prayer with these four lines:
+          </p>
+          <blockquote>
+              Sheshare praana tuma paade<br/>
+              Chhaadi a shareera aanande<br/>
+              Tama naama nei mukhare<br/>
+              Mishu tama dibya garbhare
+          </blockquote>
+          <p>
+            <i>At last chanting your name, let my soul depart from my body peacefully at Your feet and merge in Your Divine expanse.</i>
+          </p>
+          <p>
+            One of the biggest mysteries of life is the very end of it. As much as it is commonly seen or heard, it is hardly experienced by anyone. Ultimately one does experience it but can never share it with others. It is death ! Whatever human beings have learned so far from the experience of the dying people, have recorded observations until the point of death, not a step further, not a point beyond. Science has been able to collect statistical and medical data on the perishing body but nothing has been documented on the imperishable soul. Human civilizations have relied on the knowledge imparted by the Spiritual Masters for ages in this regard. Only the Guru has the ability to transcendent physical world and reveal the tenets of spiritual world. Everyone needs to hold a hand before stepping into an unknown world. Who better than the Master who has travelled before we did ? Having explored the world beyond and having mastered the path, only the Guru is capable of guiding the soul after it departs from the physical body. A perfect guide for the journey ahead. In the section ‘The Science of death’ and ‘The Knowledge of death’, Shri Guru Bhagavat elaborates on the role of the Guru in the transmigration of the soul across the various spheres of the spiritual world. And with such a Master to help, there is no looking further for help. It takes the earnest devotion towards the Guru for Him to come to rescue at this critical juncture. So, it is of utmost relevance that the author has invoked the Guru to conclude this prayer of life.            
+          </p>
+          <p>
+            Introspecting our life, I believe that these two stanzas reflect the essence of our existence. One: “How should we perceive the events that affect us?” (The Present) and “What is going to happen at the end?” (The Future). These two points in the timeline impact us whether we believe in a Guru or not. We have no control over the events continuum and ultimately we are going to die. Ultimately every thought that arises in our mind is in a way related to the events of the present and the anxiety of the future to come. And the biggest anxiety resulting in fear is the very moment where one’s future ends, the end of it all, the death! But, what is interesting is the way these two undeniable aspects affect the true devotee of a Guru compared to the one who is on his own. How the Guru comes into one’s life by the actions of (The Past) is one thing, but what happens from the moment of Guru’s arrival in life until the end is of utmost importance. Thoughts, actions and devotion from this moment to the last is what will determine the course of the soul in this world and thereafter. That is what needs to be realized.
+          </p>
+        </article>     
+        <article *ngIf="articleNo === 3">
             <p>
               There are five levels of devotees of five kinds with different work, ethnic, tradition backgrounds.  
             </p>
@@ -65,7 +148,7 @@
               Amananka pragati pai  II Guru sada thaathi chahin<br/>
               Sabumate sahajya kari  II Mayaru aanathi otari
             </blockquote>
-          </article>      
+        </article>  
       </div>
   </div>
 </div>

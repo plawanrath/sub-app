@@ -1,5 +1,19 @@
 <div class="wrapper">
-  <p>
-    volume4 works!
-  </p>
-</div>
+    <div class="document">
+      <h1 *ngIf="articleNo == 1">Shri Guru Bhagavat Vol IV</h1>
+      <div class="left">
+        <a class="previous round" (click)="previousArticle()">&#8249;</a>      
+      </div>
+      <div class="right">
+        <a class="next round" (click)="nextArticle()">&#8250;</a>
+      </div>
+      <div class="document__content">
+          <article *ngIf="articleNo == 1">
+            <p>
+              Volume Four is devoted to God realization (Ishwar Praapti), difference between Guru’s worship and worship of Hindu deities, Yoga-Sadhana (Principles of Yogic Practices). Devotion, Spiritual/Occult powers (Siddhis), Dhyan Siddhant (the theory of Meditation), Samadhi (a state of merger of human consciousness with Divine consciousness), the subtle themes of the Absolute Reality (Brahm), Universe (Brahmand) and theory of Incarnations. The science of God and Brahama’s Blueprint of creation in terms of attraction and repulsion theory also worth reading from point of view of relating human body and the Universe. The author has very clearly depicted the theory of mediation along with ancillary knowledge of Mediation for the readers in the path of spiritual journey.                        
+            </p> 
+          </article>            
+        </div>
+    </div>
+  </div>
+  
