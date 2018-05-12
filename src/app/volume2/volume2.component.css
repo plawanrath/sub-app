@@ -1,7 +1,7 @@
 .wrapper {
     width: 1200px;
     height: 670px;  
-    display: inline-block;
+    display: table inline-block;
     margin: 0 auto;          
 }
 

@@ -1,5 +1,19 @@
 <div class="wrapper">
-  <p>
-    videos works!
-  </p>
+  <div class="document">
+    <h1 *ngIf="videoNo === 1">{{ videos[0].Title }}</h1>
+    <h1 *ngIf="videoNo === 2">{{ videos[1].Title }}</h1>
+    <h1 *ngIf="videoNo === 3">{{ videos[2].Title }}</h1>
+    <h1 *ngIf="videoNo === 4">{{ videos[3].Title }}</h1>
+  </div>
+  <div class="left">
+    <a class="previous round" (click)="previousVideo()">&#8249;</a>      
+  </div>
+  <div class="right">
+    <a class="next round" (click)="nextVideo()">&#8250;</a>
+  </div>
+  <div>
+    <p style="text-align: center">
+      <iframe [src]='videoUrl' width="80%" height="500px" frameborder="0" allowfullscreen></iframe>
+    </p>
+  </div>
 </div>
