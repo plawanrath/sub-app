@@ -8,11 +8,15 @@ import { Volume3Component } from './volume3/volume3.component';
 import { Volume4Component } from './volume4/volume4.component';
 import { Volume5Component } from './volume5/volume5.component';
 import { AuthorComponent } from './author/author.component';
+import { PrayerComponent } from './prayer/prayer.component';
+import { SgbqaComponent } from './sgbqa/sgbqa.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'videos', component: VideosComponent },
+  { path: 'sgbqa', component: SgbqaComponent },
+  { path: 'prayer', component: PrayerComponent },
   { path: 'volume1', component: Volume1Component },
   { path: 'volume2', component: Volume2Component },
   { path: 'volume3', component: Volume3Component },

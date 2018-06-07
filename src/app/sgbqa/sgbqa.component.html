@@ -1,0 +1,36 @@
+<div class="wrapper">
+  <div class="document">
+    <h1>Shri Guru Bhagavat Q &amp; A</h1>
+    <div class="document__content">
+      <fieldset>
+        <legend style="font-size: 25px">How does this work ?</legend>
+          <ul>
+            <li>Submit your question here and tag it as either a General question or if it belongs to a specific volume.</li>
+            <li>Upon submission of the question, they will be reviewed.</li>
+            <li>When review is complete, they will be sent to appropriate people to formulate an answer.</li>
+            <li>Once we get the answer, they will be posted in this page.</li>
+          </ul>
+      </fieldset>
+      <article>
+        <p *ngIf="!loading; else loadGif">
+          <label>Tag  your Question</label><br/>
+          <select [(ngModel)]="Category">
+            <option></option>
+            <option>Volume I</option>
+            <option>Volume II</option>
+            <option>Volume III</option>
+            <option> Volume IV</option>
+            <option>Volume V</option>
+            <option>General</option>
+          </select><br/><br/>
+          <label>What is Your Question ?</label><br/><br/>
+          <textarea [(ngModel)]="Question" placeholder="Please write your question here...."></textarea><br/><br/>
+          <button [disabled]="!isValid()" class="button button2" (click)="onSubmit()">Submit Your Question</button>
+        </p>
+        <ng-template #loadGif>
+          <img src="../../assets/loading.gif" height="400px" />
+        </ng-template>
+      </article>
+    </div>
+  </div>
+</div>

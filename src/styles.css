@@ -47,6 +47,33 @@ blockquote {
     -webkit-font-smoothing: antialiased;
 }
 
+article > ul {
+    --x-height-multiplier: 0.375;
+    --baseline-multiplier: 0.17;
+    font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+    letter-spacing: .01rem;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 1.58;
+    letter-spacing: -.003em;
+    color: rgba(0,0,0,.84);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;    
+}
+
+b {
+    font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+    letter-spacing: .01rem;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 1.58;
+    letter-spacing: -.003em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;        
+}
+
 article > .aside {
     font-family: Lucida Grande;
     margin: 30px 20px;

@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -15,6 +16,11 @@ import { AuthorComponent } from './author/author.component';
 import { ScrollToModule } from 'ng2-scroll-to-el';
 import { ScrollFadeInDirective } from './scroll-fade-in.directive';
 import { Dashsub2Component } from './dashsub2/dashsub2.component';
+import { PrayerComponent } from './prayer/prayer.component';
+import { SgbqaComponent } from './sgbqa/sgbqa.component';
+import { SgbapiService } from './sgbapi.service';
+import { HttpClient } from 'selenium-webdriver/http';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,15 +34,19 @@ import { Dashsub2Component } from './dashsub2/dashsub2.component';
     Volume5Component,
     AuthorComponent,
     ScrollFadeInDirective,
-    Dashsub2Component
+    Dashsub2Component,
+    PrayerComponent,
+    SgbqaComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     ScrollToModule.forRoot(),
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [SgbapiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

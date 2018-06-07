@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class Volume2Component implements OnInit {
 
   articleNo: number = 1;
-  NoOfArticles: number = 6;
+  NoOfArticles: number = 7;
   constructor() { }
 
   ngOnInit() {
