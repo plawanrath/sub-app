@@ -1,10 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-import { Observable } from 'rxjs/observable';
+import { Observable, of } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
-
-import { of } from 'rxjs/observable/of';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })

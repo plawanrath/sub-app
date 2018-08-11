@@ -7,21 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Volume2Component implements OnInit {
 
-  articleNo: number = 1;
-  NoOfArticles: number = 7;
+  articleNo = 1;
+  NoOfArticles = 7;
   constructor() { }
 
   ngOnInit() {
   }
 
   nextArticle() {
-    if(this.articleNo < this.NoOfArticles) {
+    if (this.articleNo < this.NoOfArticles) {
       this.articleNo++;
     }
   }
 
   previousArticle() {
-    if(this.articleNo > 1) {
+    if (this.articleNo > 1) {
       this.articleNo--;
     }
   }}

@@ -9,11 +9,11 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     trigger('scrollAnimation', [
       state('show', style({
         opacity: 1,
-        transform: "translateX(0)"
+        transform: 'translateX(0)'
       })),
       state('hide',   style({
         opacity: 0,
-        transform: "translateX(-100%)"
+        transform: 'translateX(-100%)'
       })),
       transition('show => hide', animate('1000ms ease-out')),
       transition('hide => show', animate('1000ms ease-in'))
@@ -22,7 +22,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 })
 export class Dashsub2Component implements OnInit {
 
-  state = 'hide'
+  state = 'hide';
 
   constructor(public el: ElementRef) { }
 
@@ -31,14 +31,12 @@ export class Dashsub2Component implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
-    const elementOffsetTop = document.getElementById("content2").offsetTop;
-    const firstImgOffset = document.getElementById("content").offsetHeight;
-    console.log(window.pageYOffset)
-    console.log(firstImgOffset)
-    if(window.pageYOffset > firstImgOffset + 100) {
+    const elementOffsetTop = document.getElementById('content2').offsetTop;
+    const firstImgOffset = document.getElementById('content').offsetHeight;
+    if (window.pageYOffset > firstImgOffset + 100) {
       this.state = 'show';
     } else {
       this.state = 'hide';
-    }    
+    }
   }
 }

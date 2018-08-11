@@ -10,40 +10,40 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 export class VideosComponent implements OnInit {
 
   videos: Video[] = [
-    new Video("Shri Guru Bhagavat - An Introduction", "W8yrLI62ELI"),
-    new Video("Release of Shri Guru Bhagavat Vol1", "KI7x8C8JqQg"),
-    new Video("Release of Shri Guru Bhagavat Vol2", "8NbaI-eXl1o"),
-    new Video("The Origin of Shri Guru Bhagavat", "bHNkGpEmKAY")
+    new Video('Shri Guru Bhagavat - An Introduction', 'W8yrLI62ELI'),
+    new Video('Release of Shri Guru Bhagavat Vol1', 'KI7x8C8JqQg'),
+    new Video('Release of Shri Guru Bhagavat Vol2', '8NbaI-eXl1o'),
+    new Video('The Origin of Shri Guru Bhagavat', 'bHNkGpEmKAY')
   ];
-  Url: string = "https://www.youtube.com/embed/";
-  videoUrl: SafeResourceUrl
-  videoNo: number = 1;
-  NoOfVideos: number = 4;
+  Url = 'https://www.youtube.com/embed/';
+  videoUrl: SafeResourceUrl;
+  videoNo = 1;
+  NoOfVideos = 4;
 
   constructor(private _sanitizer: DomSanitizer) { }
 
   ngOnInit() {
-    let res = this.Url + this.videos[0].Embed
+    const res = this.Url + this.videos[0].Embed;
     this.UpdateSafeUrl(res);
   }
 
   UpdateSafeUrl(url: string) {
-    this.videoUrl = this._sanitizer.bypassSecurityTrustResourceUrl(url)    
+    this.videoUrl = this._sanitizer.bypassSecurityTrustResourceUrl(url);
   }
 
-  nextVideo() { 
-    if(this.videoNo < this.NoOfVideos) {
+  nextVideo() {
+    if (this.videoNo < this.NoOfVideos) {
       this.videoNo++;
-      let res = this.Url + this.videos[this.videoNo-1].Embed
-      this.UpdateSafeUrl(res)
+      const res = this.Url + this.videos[this.videoNo - 1].Embed;
+      this.UpdateSafeUrl(res);
     }
   }
 
   previousVideo() {
-    if(this.videoNo > 1) {
+    if (this.videoNo > 1) {
       this.videoNo--;
-      let res = this.Url + this.videos[this.videoNo-1].Embed
-      this.UpdateSafeUrl(res)      
+      const res = this.Url + this.videos[this.videoNo - 1].Embed;
+      this.UpdateSafeUrl(res);
     }
    }
 }
