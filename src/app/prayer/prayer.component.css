@@ -1,8 +1,8 @@
 .wrapper {
-    width: 1200px;
-    height: 670px;  
+    width: 100%;
+    height: 670px;
     display: table inline-block;
-    margin: 0 auto;          
+    margin: 0 auto;
 }
 
 .left {
@@ -43,6 +43,7 @@ a:hover {
     background-color: rgba(#fac564);
     padding: 40px 20px;
     border-radius: 5px;
+    width: 90%;
 }
 
 .document__content {
@@ -50,6 +51,8 @@ a:hover {
     column-gap: 20px;
     padding: 20px 0;
     margin: 0 100px;
+    text-align: justify;
+    width: 90%;
 }
 
 h1 {

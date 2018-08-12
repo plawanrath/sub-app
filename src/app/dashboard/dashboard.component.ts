@@ -4,7 +4,8 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css'],
+  styleUrls: ['../../app/w3.css',
+    './dashboard.component.css'],
   animations: [
     trigger('scrollAnimation', [
       state('show', style({

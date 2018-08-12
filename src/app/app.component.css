@@ -19,3 +19,21 @@ nav a {
 nav a:hover {
     color: rgb(29, 28, 28);
 }
+
+div.navbar{
+  margin: 0;
+  padding: 0;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+}
+div.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
