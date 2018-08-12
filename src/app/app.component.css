@@ -3,16 +3,17 @@ nav {
     padding: 0;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: rgb(83, 126, 83);
+    background-color: rgb(197,179,88);
     display: flex;
     z-index: 100;
 }
 
 nav a {
     text-decoration: none;
-    color: rgb(236, 231, 231);
+    color: rgb(255, 255, 255);
     padding-left: 10px;
     padding-right: 10px;
+    font-family: "Comic Sans MS";
     flex-grow: 1;
 }
 
