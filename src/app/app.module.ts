@@ -21,6 +21,7 @@ import { SgbqaComponent } from './sgbqa/sgbqa.component';
 import { SgbapiService } from './sgbapi.service';
 import { HttpClient } from 'selenium-webdriver/http';
 import { HttpClientModule } from '@angular/common/http';
+import { SplashComponent } from './splash/splash.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { HttpClientModule } from '@angular/common/http';
     ScrollFadeInDirective,
     Dashsub2Component,
     PrayerComponent,
-    SgbqaComponent
+    SgbqaComponent,
+    SplashComponent
   ],
   imports: [
     FormsModule,

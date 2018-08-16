@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes, Router } from '@angular/router';
+import { SplashComponent } from './splash/splash.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { VideosComponent } from './videos/videos.component';
 import { Volume1Component } from './volume1/volume1.component';
@@ -12,8 +13,9 @@ import { PrayerComponent } from './prayer/prayer.component';
 import { SgbqaComponent } from './sgbqa/sgbqa.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: '', redirectTo: '/splash', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
+  { path: 'splash', component: SplashComponent },
   { path: 'videos', component: VideosComponent },
   { path: 'sgbqa', component: SgbqaComponent },
   { path: 'prayer', component: PrayerComponent },
