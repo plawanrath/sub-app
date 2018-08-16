@@ -4,7 +4,9 @@ import { SgbapiService } from '../sgbapi.service';
 @Component({
   selector: 'app-sgbqa',
   templateUrl: './sgbqa.component.html',
-  styleUrls: ['./sgbqa.component.css']
+  styleUrls: ['../../app/w3.css',
+'../dashboard/dashboard.component.css',
+'./sgbqa.component.css']
 })
 export class SgbqaComponent implements OnInit {
 

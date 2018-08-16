@@ -5,7 +5,9 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 @Component({
   selector: 'app-videos',
   templateUrl: './videos.component.html',
-  styleUrls: ['./videos.component.css']
+  styleUrls: ['../../app/w3.css',
+'../dashboard/dashboard.component.css',
+'./videos.component.css']
 })
 export class VideosComponent implements OnInit {
 

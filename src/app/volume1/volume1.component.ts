@@ -3,7 +3,9 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-volume1',
   templateUrl: './volume1.component.html',
-  styleUrls: ['./volume1.component.css']
+  styleUrls: ['../../app/w3.css',
+'../dashboard/dashboard.component.css',
+'./volume1.component.css']
 })
 export class Volume1Component implements OnInit {
 

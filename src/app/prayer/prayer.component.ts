@@ -4,7 +4,8 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-prayer',
   templateUrl: './prayer.component.html',
   styleUrls: ['../../app/w3.css',
-    './prayer.component.css']
+'../dashboard/dashboard.component.css',
+'./prayer.component.css']
 })
 export class PrayerComponent implements OnInit {
 
