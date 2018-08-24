@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HostListener } from '@angular/core';
+import { Router } from '../../node_modules/@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,13 @@ import { HostListener } from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'app';
 
+  constructor(private route: Router) {}
   ngOnInit() {
 
   }
+
+  isSplash() {
+    return this.route.url.indexOf('splash') >= 0;
+  }
+
 }

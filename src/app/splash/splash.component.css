@@ -1,4 +1,7 @@
 .button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   border-radius: 4px;
   background-color: #f4511e;
   border: none;
